@@ -1,29 +1,16 @@
-//target num_id text
-function numberStore(numId) {
-  var userInput = document.getElementById(numId);
-  return Number(userInput.value);
+// Variables
+var numOne = document.getElementById('num_one');
+var numTwo = document.getElementById('num_two');
+var addBtn = document.getElementById('calculateBtn')
+var ans = document.getElementById('answer');
+
+// Addition function
+function addition() {
+  var numberOne = Number(numOne.value);
+  var numberTwo = Number(numTwo.value);
+  var sum = numberOne + numberTwo;
+  ans.innerHTML = sum.toString();
 }
 
-var stored1 = numberStore('num_one')
-var stored2 = numberStore('num_two')
-
-//addition function
-function addition(numOne, numTwo) {
-  return numOne + numTwo;
-}
-
-var result = addition(stored1, stored2)
-
-//display result in div.answer
-function answer() {
-  var ansr = document.getElementById("answer");
-  ansr.textContent = result;
-}
-
-
-//listener for calculateBtn
-var addBtn = document.getElementById("calculateBtn")
-
-addBtn.addEventListener('click', answer)
-
-
+// Listener for calculateBtn
+addBtn.addEventListener('click', addition)
