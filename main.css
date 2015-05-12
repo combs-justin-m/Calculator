@@ -1,4 +1,11 @@
+body {
+  background-image: url(http://georgesrestaurant.com/wp-content/uploads/2010/07/Chalkboard.jpg);
+  background-size: cover;
+  font-family: 'Walter Turncoat', cursive;
+}
+
 section {
+  color: #fff;
   text-align: center;
   font-size: 24px;
 }
@@ -12,5 +19,5 @@ input {
 }
 
 #calculateBtn {
-  font-size: 24px;
+  width: 90px;
 }
