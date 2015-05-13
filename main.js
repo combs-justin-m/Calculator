@@ -9,7 +9,7 @@ function addition() {
   var numberOne = Number(numOne.value);
   var numberTwo = Number(numTwo.value);
   var sum = numberOne + numberTwo;
-  ans.innerHTML = sum.toString();
+  document.getElementById('answer').textContent = sum;
 }
 
 // Listener for calculateBtn
