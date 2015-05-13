@@ -1,16 +1,16 @@
 // Variables
-var numOne = document.getElementById('num_one');
-var numTwo = document.getElementById('num_two');
-var addBtn = document.getElementById('calculateBtn')
-var ans = document.getElementById('answer');
+var $numOne = document.querySelector('#num_one');
+var $numTwo = document.querySelector('#num_two');
+var $addBtn = document.querySelector('#calculateBtn')
+var $answer = document.querySelector('#answer');
 
 // Addition function
 function addition() {
-  var numberOne = Number(numOne.value);
-  var numberTwo = Number(numTwo.value);
+  var numberOne = Number($numOne.value);
+  var numberTwo = Number($numTwo.value);
   var sum = numberOne + numberTwo;
-  document.getElementById('answer').textContent = sum;
+  $answer.textContent = sum;
 }
 
 // Listener for calculateBtn
-addBtn.addEventListener('click', addition)
+$addBtn.addEventListener('click', addition)
